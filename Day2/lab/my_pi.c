@@ -4,7 +4,21 @@
 
 #include <mpi.h>
 
-#define N 1000
+#define N 10000000
+
+#include <time.h>
+#include <sys/time.h>
+
+double seconds()
+/* Returns elepsed seconds past from the last call to timer rest */
+{
+  struct timeval tmp;
+  double sec;
+  gettimeofday( &tmp, (struct timezone *) 0 );
+  sec = tmp.tv_sec + ( (double) tmp.tv_usec ) / 1000000.0;
+  return sec;
+}
+
 
 int main( int argc, char * argv[] )
 {
@@ -13,6 +27,8 @@ int main( int argc, char * argv[] )
   double w = 1.0 / n;
   double x, f_x, sum = 0.0, tot_sum = 0.0;
 
+  double t1 = 0.0, t2 = 0.0;
+  
   int size = 1, rank = 0, n_loc, start_i, end_i; 
   
   MPI_Init( &argc, &argv );
@@ -24,6 +40,8 @@ int main( int argc, char * argv[] )
   n_loc = n / size;
   start_i = rank * n_loc;
   end_i = start_i + n_loc;
+
+  t1 = seconds();
   
   for( int i = start_i + 1 ; i <= end_i; i++ ) {
 
@@ -34,7 +52,9 @@ int main( int argc, char * argv[] )
 
   MPI_Reduce( &sum, &tot_sum, 1, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD );  
 
-  if( !rank ) fprintf( stdout, "The value of PI is %.10g Vs %.10g\n\n", tot_sum * w, M_PI );
+  t2 = seconds();
+  
+  if( !rank ) fprintf( stdout, "The value of PI is %.10g Vs %.10g\nTime to solution %.3g (sec.)\n", tot_sum * w, M_PI, t2 - t1 );
 
   MPI_Finalize();
   
