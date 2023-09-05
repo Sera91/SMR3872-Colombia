@@ -4,7 +4,7 @@
 
 #include <mpi.h>
 
-#define N 10000000
+#define N 1000000000
 
 #include <time.h>
 #include <sys/time.h>
@@ -43,7 +43,8 @@ int main( int argc, char * argv[] )
 
   t1 = seconds();
   
-  for( int i = start_i + 1 ; i <= end_i; i++ ) {
+  //  for( int i = start_i + 1 ; i <= end_i; i++ ) {
+  for( int i = rank ; i <= n; i+=size ) {
 
     x = w * (i - 0.5);
     f_x = 4.0 * 1.0 /(x*x + 1.0);

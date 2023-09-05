@@ -13,4 +13,10 @@ module load openmpi/4.1.4--gcc--11.3.0-cuda-11.8
 
 mpicc -O3 my_pi.c
 
+mpirun -np 1 ./a.out
+
+mpirun -np 2 ./a.out
+
 mpirun -np 4 ./a.out
+
+mpirun -np 8 ./a.out
