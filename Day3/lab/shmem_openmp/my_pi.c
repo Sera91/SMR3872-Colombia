@@ -48,7 +48,7 @@ int main( int argc, char * argv[] )
 
   t2 = seconds();
   
-  fprintf( stdout, "The value of PI is %.10g Vs %.10g\nTime to solution %.6g (sec.)\n", sum * w, M_PI );
+  fprintf( stdout, "The value of PI is %.10g Vs %.10g\nTime to solution %.6g (sec.)\n", sum * w, M_PI, t2 - t1 );
   
   return 0;
 }
