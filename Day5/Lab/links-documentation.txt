@@ -1,0 +1,28 @@
+##Links to website documentation 
+
+#cuML docs
+https://docs.rapids.ai/api/cuml/stable/
+
+#cudf docs
+https://docs.rapids.ai/api/cudf/stable/
+
+
+#Accelerate tutorial on distributed training
+https://huggingface.co/docs/transformers/accelerate#train-with-a-script
+
+#Dask distributed
+https://distributed.dask.org/en/latest/
+
+#Dask examples
+https://examples.dask.org/array.html
+
+#dask-cuda
+https://docs.rapids.ai/api/dask-cuda/nightly/index.html
+
+#dask-mpi for Multi-GPU 
+http://mpi.dask.org/en/latest/gpu.html
+
+
+#REPOSITORIES for large datasets
+#Kaggle
+https://www.kaggle.com/code/benhamner/competitions-with-largest-datasets
