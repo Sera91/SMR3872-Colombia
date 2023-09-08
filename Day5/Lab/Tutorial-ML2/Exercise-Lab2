@@ -1,0 +1,4 @@
+#EXERCISE
+
+Run Resnet18 training on Leonardo GPUs, both on single GPU, on 4 GPU and on 2 GPU nodes (8 GPUs).
+Use the Accelerate library to run the Resnet model on multi-GPU.
