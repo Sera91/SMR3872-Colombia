@@ -9,21 +9,18 @@
 #SBATCH --job-name=cl_test
 #SBATCH --mail-type=FAIL,END
 #SBATCH --mail-user=sdigioia@sissa.it
-#SBATCH -o /leonardo_work/ICT23_SMR3872/sdigioia/test_env/run.out
-#SBATCH -e /leonardo_work/ICT23_SMR3872/sdigioia/test_env/run.err
+#SBATCH -o $SLURM_SUBMIT_DIR/run.out
+#SBATCH -e $SLURM_SUBMIT_DIR/run.err
 
 module purge
 module load --auto profile/deeplrn
 module load gcc
 module load cuda/11.8 
 
-cd /leonardo_work/ICT23_SMR3872/sdigioia/test_env/
+cd $SLURM_SUBMIT_DIR
+source $HOME/.bashrc
 
-source /leonardo/home/userexternal/sdigioia/.bashrc
-
-#conda activate /m100_scratch/userexternal/sdigioia/geom2
-#conda activate /m100_work/ICT23_ESP_C/env/GNNenv
-conda activate /leonardo_work/ICT23_ESP_0/shared-env/MLenv
+conda activate /leonardo_work/ICT23_SMR3872/shared-env/MLenv/
 
 python --version
 
