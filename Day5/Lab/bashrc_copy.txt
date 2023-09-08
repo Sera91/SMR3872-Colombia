@@ -1,0 +1,17 @@
+# User specific aliases and functions
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/anaconda3-2022.05-e7262poa2u2i3rurf3cdt6a5r6dqieik/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/anaconda3-2022.05-e7262poa2u2i3rurf3cdt6a5r6dqieik/etc/profile.d/conda.sh" ]; then
+        . "/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/anaconda3-2022.05-e7262poa2u2i3rurf3cdt6a5r6dqieik/etc/profile.d/conda.sh"
+    else
+        export PATH="/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/anaconda3-2022.05-e7262poa2u2i3rurf3cdt6a5r6dqieik/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
