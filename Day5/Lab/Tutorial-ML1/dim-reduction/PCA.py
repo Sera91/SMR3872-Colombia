@@ -117,7 +117,7 @@ iono_arr = df_iono.iloc[:,:-1].to_numpy()
 
 #dropping the target  column  (bad/good)
 classes = df_iono["target"].tolist()
-X = df_iono.drop("target", 1)
+X = df_iono.drop(labels="target", axis=1)
 
 
 
