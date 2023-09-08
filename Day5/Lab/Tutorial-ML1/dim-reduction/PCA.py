@@ -1,3 +1,5 @@
+import cuDF
+import cuml
 import numpy as np
 import sys
 import pandas as pd
@@ -6,12 +8,12 @@ import seaborn as sns
 from sklearn.covariance import EmpiricalCovariance
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
-
+from cuml.decomposition import PCA as cuPCA
 
 #3rd Exercise of Practice1
 #Download the Ionosphere dataset, containing info on radar
 #returns from the ionosphere, from the website:
-#http://archive.ics.uci.edu/ml/datasets/Ionosphere
+#http://archive.ics.uci.edu/ml/datasets/Ionosphere/
 #and perform a PCA analysis of the Ionosphere dataset
 
 #part of 4th Exercise

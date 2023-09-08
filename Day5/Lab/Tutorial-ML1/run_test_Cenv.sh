@@ -1,7 +1,8 @@
 #!/bin/bash
-#SBATCH -A ict23_esp_0
+#SBATCH -A ICT23_SMR3872
+###ict23_esp_0
 #SBATCH -p boost_usr_prod
-#SBATCH --time 24:00:00       # format: HH:MM:SS
+#SBATCH --time 00:05:00       # format: HH:MM:SS
 #SBATCH -N 1                  # 1 node
 #SBATCH --mem=60G
 #SBATCH --ntasks-per-node=32 # out of 128
