@@ -1,0 +1,91 @@
+Traceback (most recent call last):
+  File "/home/sdigioia/tutorial/Dask-tutorial-SA/scripts/SVCclassifier_dask_report2.py", line 19, in <module>
+Traceback (most recent call last):
+  File "/home/sdigioia/tutorial/Dask-tutorial-SA/scripts/SVCclassifier_dask_report2.py", line 19, in <module>
+Traceback (most recent call last):
+  File "/home/sdigioia/tutorial/Dask-tutorial-SA/scripts/SVCclassifier_dask_report2.py", line 19, in <module>
+Traceback (most recent call last):
+  File "/home/sdigioia/tutorial/Dask-tutorial-SA/scripts/SVCclassifier_dask_report2.py", line 19, in <module>
+Traceback (most recent call last):
+  File "/home/sdigioia/tutorial/Dask-tutorial-SA/scripts/SVCclassifier_dask_report2.py", line 19, in <module>
+Traceback (most recent call last):
+  File "/home/sdigioia/tutorial/Dask-tutorial-SA/scripts/SVCclassifier_dask_report2.py", line 19, in <module>
+Traceback (most recent call last):
+  File "/home/sdigioia/tutorial/Dask-tutorial-SA/scripts/SVCclassifier_dask_report2.py", line 19, in <module>
+Traceback (most recent call last):
+  File "/home/sdigioia/tutorial/Dask-tutorial-SA/scripts/SVCclassifier_dask_report2.py", line 19, in <module>
+Traceback (most recent call last):
+  File "/home/sdigioia/tutorial/Dask-tutorial-SA/scripts/SVCclassifier_dask_report2.py", line 19, in <module>
+Traceback (most recent call last):
+  File "/home/sdigioia/tutorial/Dask-tutorial-SA/scripts/SVCclassifier_dask_report2.py", line 19, in <module>
+    with performance_report(filename="dask-report.html"):   
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/client.py", line 5568, in __enter__
+    with performance_report(filename="dask-report.html"):   
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/client.py", line 5568, in __enter__
+    with performance_report(filename="dask-report.html"):   
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/client.py", line 5568, in __enter__
+    with performance_report(filename="dask-report.html"):   
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/client.py", line 5568, in __enter__
+    with performance_report(filename="dask-report.html"):   
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/client.py", line 5568, in __enter__
+    with performance_report(filename="dask-report.html"):   
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/client.py", line 5568, in __enter__
+    with performance_report(filename="dask-report.html"):   
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/client.py", line 5568, in __enter__
+    with performance_report(filename="dask-report.html"):   
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/client.py", line 5568, in __enter__
+    with performance_report(filename="dask-report.html"):   
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/client.py", line 5568, in __enter__
+    with performance_report(filename="dask-report.html"):   
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/client.py", line 5568, in __enter__
+    get_client().sync(self.__aenter__)
+    get_client().sync(self.__aenter__)
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/worker.py", line 2782, in get_client
+    get_client().sync(self.__aenter__)
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/worker.py", line 2782, in get_client
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/worker.py", line 2782, in get_client
+    get_client().sync(self.__aenter__)
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/worker.py", line 2782, in get_client
+    get_client().sync(self.__aenter__)
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/worker.py", line 2782, in get_client
+    get_client().sync(self.__aenter__)
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/worker.py", line 2782, in get_client
+    get_client().sync(self.__aenter__)
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/worker.py", line 2782, in get_client
+    get_client().sync(self.__aenter__)
+    get_client().sync(self.__aenter__)
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/worker.py", line 2782, in get_client
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/worker.py", line 2782, in get_client
+    get_client().sync(self.__aenter__)
+  File "/home/sdigioia/.conda/envs/py310/lib/python3.10/site-packages/distributed/worker.py", line 2782, in get_client
+    raise ValueError("No global client found and no address provided")
+ValueError: No global client found and no address provided
+    raise ValueError("No global client found and no address provided")
+ValueError: No global client found and no address provided
+    raise ValueError("No global client found and no address provided")
+ValueError: No global client found and no address provided
+    raise ValueError("No global client found and no address provided")
+ValueError: No global client found and no address provided
+    raise ValueError("No global client found and no address provided")
+ValueError: No global client found and no address provided
+    raise ValueError("No global client found and no address provided")
+ValueError: No global client found and no address provided
+    raise ValueError("No global client found and no address provided")
+ValueError: No global client found and no address provided
+    raise ValueError("No global client found and no address provided")
+ValueError: No global client found and no address provided
+    raise ValueError("No global client found and no address provided")
+ValueError: No global client found and no address provided
+    raise ValueError("No global client found and no address provided")
+ValueError: No global client found and no address provided
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[3443,1],0]
+  Exit code:    1
+--------------------------------------------------------------------------

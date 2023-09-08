@@ -1,0 +1,4 @@
+<class 'numpy.ndarray'>
+(1797, 64)
+1797
+Delta time to fit and cross-validate SVC model with scipy: 4.918208360671997
