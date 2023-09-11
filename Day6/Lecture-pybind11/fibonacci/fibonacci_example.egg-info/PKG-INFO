@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: fibonacci-example
+Version: 0.1
+Summary: Barebones pybind11+setup.py example project
+Author: Serafina Di Gioia
+Author-email: sdigioia@sissa.it

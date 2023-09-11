@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: arrow-pybind-example
+Version: 0.1.0
+Summary: arrow_pybind_example
+Provides-Extra: test
+License-File: LICENSE
+License-File: LICENSE-APACHE
+License-File: LICENSE-MIT
+
+An example package demonstrating usage of C++ extensions to python with Apache Arrow libraries built with CMake

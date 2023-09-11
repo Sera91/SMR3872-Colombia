@@ -1,0 +1,18 @@
+name: "example-apache-arrow-pybind11-cmake"
+channels:
+- conda-forge
+dependencies:
+- python>=3.9
+- matplotlib
+- numpy
+- scipy
+- arrow-cpp=13.0.*
+- pyarrow=13.0.*
+- pybind11>=2.10
+- cmake>=3.4
+
+  # the following dependencies are only used to develop this example package
+  # they may be removed if you are adapting this example for use elsewhere 
+- pre-commit
+- pytest
+- clang-format>=12.0
