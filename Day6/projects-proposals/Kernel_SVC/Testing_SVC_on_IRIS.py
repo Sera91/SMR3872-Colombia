@@ -12,6 +12,7 @@ X = iris.data[:, :2]
 y = iris.target 
 
 
+X_train, X_test, y_train, y_test = train_test_split(X, Y, train_size=0.9)
 #Training the support-vector classifier
 linear = svm.SVC(kernel='linear', C=1, decision_function_shape='ovo').fit(X_train, y_train)
 rbf = svm.SVC(kernel='rbf', gamma=1, C=1, decision_function_shape='ovo').fit(X_train, y_train)
@@ -58,7 +59,8 @@ print(“Accuracy Sigmoid Kernel:”, accuracy_sig# creating a confusion matrix
 cm_lin = confusion_matrix(y_test, linear_pred)
 cm_poly = confusion_matrix(y_test, poly_pred)
 cm_rbf = confusion_matrix(y_test, rbf_pred)
-cm_sig = confusion_matrix(y_test, sig_pred)print(cm_lin)
+cm_sig = confusion_matrix(y_test, sig_pred)
+print(cm_lin)
 print(cm_poly)
 print(cm_rbf)
 print(cm_sig)
