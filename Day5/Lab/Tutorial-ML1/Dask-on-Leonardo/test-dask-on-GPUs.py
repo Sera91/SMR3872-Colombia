@@ -25,10 +25,4 @@ if __name__ == "__main__":
 
    dask_client.shutdown()
 
-client = Client()
 
-host = client.run_on_scheduler(socket.gethostname)
-port = client.scheduler_info()['services']['dashboard']
-login_node_address = "supercomputer.university.edu" # Provide address/domain of login node
-
-logger.info(f"ssh -N -L {port}:{host}:{port} {login_node_address}")
