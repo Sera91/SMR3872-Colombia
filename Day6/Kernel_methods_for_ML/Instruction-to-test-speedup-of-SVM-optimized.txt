@@ -1,0 +1,18 @@
+To test the speedup for the svm.cpp optimized 
+I suggested to 
+0) create a conda env without scikit-learn where to install the optimized scikit-learn version
+1) make a dir (e.g.: /leonardo_work/users/my_user/test_svm/) where to store different version of the modified .cpp code for different 
+number of omp threads/mpi task used (e.g: svm_OMP8.cpp)
+2) have a dir where to store the scikit-learn library to optimize (in my case : $HOME/repo-scikit)
+3) modify the 'testing_SVC_on_IRIS.py' code to apply it to adults dataset and measure the time (in my case: 'testing_SVC_on_ADULTS_with_time.py')
+4) create a batch script where you in order to the following:
+ A) activate conda env (conda activate sklearn-dev)
+ B) cp /leonardo_work/users/my_user/test_svm/svm_OMP8.cpp $HOME/repo-scikit/sklearn/svm/src/svm.cpp
+ C) pip install -e . -v
+ D) python 'testing_SVC_on_ADULTS_with_time.py' > output_OMP8.txt
+
+
+5) repeat the step A-D for all the optimized version of svm_OMP.cpp
+
+6) copy the measured time into a .csv file
+7) read this file and make and histo with matplotlib
