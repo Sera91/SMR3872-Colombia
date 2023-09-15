@@ -1,0 +1,10 @@
+Unloading profile/base
+  ERROR: Module evaluation aborted
+Loading gcc/11.3.0
+  Loading requirement: gmp/6.2.1 mpfr/4.1.0 mpc/1.2.1
+Loading openmpi/4.1.4--nvhpc--23.1-cuda-11.8
+  Loading requirement: zlib/1.2.13--gcc--11.3.0
+n_classes 10
+Files already downloaded and verified
+Files already downloaded and verified
+n_classes 10
