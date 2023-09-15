@@ -95,10 +95,10 @@ labels = k_means.predict(X)
 To get a feel for cuML’s performance against a CPU-based algorithm in the Dask environment, I report below
 the runtime for single-GPU (DGX) vs single-CPU run.
 
-![single_node](https://github.com/Sera91/SMR3872-Colombia/blob/Day10/Kmeans-multiGPU/plots/single_node.png?raw=true)
+![single_node](https://github.com/Sera91/SMR3872-Colombia/blob/main/Day10/Kmeans-multiGPU/plots/single_node.png?raw=true)
 
 
 # Multi-node multi-gpu benchmark
 
-![multi_node](https://github.com/Sera91/SMR3872-Colombia/blob/Day10/Kmeans-multiGPU/plots/benchmark.png?raw=true)
+![multi_node](https://github.com/Sera91/SMR3872-Colombia/blob/main/Day10/Kmeans-multiGPU/plots/benchmark.png?raw=true)
 
