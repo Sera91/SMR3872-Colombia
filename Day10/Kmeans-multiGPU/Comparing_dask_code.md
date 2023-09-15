@@ -23,7 +23,7 @@ The cuML project contains a C++ library with a growing collection of both dense 
 
 We benchmarked the single-GPU k-means implementation against scikit-learn so we could determine the impact of cuML’s GPU acceleration. While scikit-learn is able to parallelize k-means using multiple CPU cores (by setting the n_jobs argument to -1), the GPU k-means implementation continues to demonstrate better performance as the data sizes are increased.
 
-I ran this benchmark on a single NVIDIA GPU (32GB GV100) on an NVIDIA DGX1. The scikit-learn benchmark was taken on the same DGX1, using all 40-cores (80 total threads) of its 2.20GHz Intel Xeon CPU E5–2698 v4. We are seeing more than 100x speedup as the number of data samples reaches into the millions.
+I report here the benchmark on a single NVIDIA GPU (32GB GV100), NVIDIA DGX1. The scikit-learn benchmark was taken on the same DGX1, using all 40-cores (80 total threads) of its 2.20GHz Intel Xeon CPU E5–2698 v4. We are seeing more than 100x speedup as the number of data samples reaches into the millions.
 
 First, a quick code example of K-Means in Scikit-learn
 ```python
