@@ -2,7 +2,7 @@
 Today we are able to run different classical ML algorithm both on CPU/GPU in single node and multi-node configuration, thanks to libraries like Dask and RAPIDS.
 
 
-RAPIDS make available tens of multi-node, multi-GPU (MNMG) algorithms to cuML, the RAPIDS machine learning library. Random forests and k-means have been given the ability to scale up & out with the Dask distributed computing library. In this blog, I will focus on how we scaled our k-means algorithm, the first algorithm to fully utilize our new scalable architecture (which I will be explaining in detail in an upcoming blog). By the end of this blog, I hope you are as excited about the future of scalable and performant machine learning as we are!
+RAPIDS make available tens of multi-node, multi-GPU (MNMG) algorithms to cuML, the RAPIDS machine learning library. Random forests and k-means have been given the ability to scale up & out with the Dask distributed computing library. In this blog, I will focus on the k-means algorithm, the first algorithm to fully utilize the RAPIDS scalable architecture. By the end, I hope you are as excited about the future of scalable and performant machine learning as I am!
 
 
 #Kmeans multi-gpu 
